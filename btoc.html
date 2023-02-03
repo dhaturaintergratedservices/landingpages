@@ -180,15 +180,12 @@
         <div class="h2 text-center head fon1 "><span class="c3">Students</span> Successfully Hired By </div>
         
         <div class="container">
-            <div class="row ">
-                <div id="owl2" class="owl-carousel owl-theme">   
-                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="https://adiroha.co/assets/style_sheets/pictures/client-1.png" width="100%" ></div>
-                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="https://adiroha.co/assets/style_sheets/pictures/client-1.png" width="100%" ></div>
-                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="https://adiroha.co/assets/style_sheets/pictures/client-1.png" width="100%" ></div>
-                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="https://adiroha.co/assets/style_sheets/pictures/client-1.png" width="100%" ></div>
-                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="https://adiroha.co/assets/style_sheets/pictures/client-1.png" width="100%" ></div>
-                </div>
-
+            <div class="row"> 
+                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="/style_sheets/pictures/happiest-minds.png" width="100%"></div>
+                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="/style_sheets/pictures/capgemini.png" width="100%"></div>
+                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="/style_sheets/pictures/genisys.png" width="100%"></div>
+                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="/style_sheets/pictures/tcs.png" width="100%"></div>
+                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="/style_sheets/pictures/ey.png" width="100%"></div>
             </div>
         </div>
         
@@ -342,45 +339,45 @@
       <div class="btn p-3 upbtn">
                 <i class="fa fa-caret-up" aria-hidden="true"></i>
             </div>
-        <script>
-            $('#owl2').owlCarousel({
-                dots: false,
-                // rtl:true,
-                loop: true,
-                margin: 10,
-                nav: false,
-                autoplay: true,
-                autoplayTimeout: 1000,
-                responsive: {
-                    0: {
-                        items: 1,
-                        loop: true
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 5,
+            <script type="text/javascript">
 
-                    }
-                }
-            });
-
-
-            $(document).ready(function() {
-        $(window).scroll(function() {
-            var upbtn = $(window).scrollTop();
-            if (upbtn > 0) {
-                $(".navbar,.navbarsm").css("background", "#020202");
-                $(".navbar,.navbarsm").css("transition", ".5s");
-            } else {
-                $(".navbar,.navbarsm").css("background", "transparent");
-                $(".navbar,.navbarsm").css("transition", ".5s");
-            }
-        });
-    });
-
-    </script>
+                $(document).ready(function() {
+                            $(window).scroll(function() {
+                                var upbtn = $(window).scrollTop()
+                                var nav = $(window).scrollTop()
+                                if (upbtn > 80) {
+                                    $(".upbtn").css("opacity", "1");
+                                    $(".upbtn").css("transition", ".5s");
+                                    $(".upbtn").css("cursor", "pointer");
+                                    $(".logo").css("width", "25%");
+                                    $(".logo,.nav-link").css("transition", ".5s");
+                                    $(".nav-link").css("font-size", "16px");
+                
+                                } else {
+                                    $(".upbtn").css("opacity", "0");
+                                    $(".upbtn").css("transition", ".5s");
+                                    $(".upbtn").css("cursor", "context-menu");
+                                    $(".logo").css("width", "40%");
+                                    $(".logo,.nav-link").css("transition", ".5s");
+                                    $(".nav-link").css("font-size", "18px");
+                                }
+                            });
+                        });
+                        $(document).ready(function() {
+                            $(window).scroll(function() {
+                                var upbtn = $(window).scrollTop();
+                                if (upbtn > 0) {
+                        $(".navbar,.navbarsm").css("background", "#020202");
+                            $(".navbar,.navbarsm").css("transition", ".5s");
+                        } else {
+                            $(".navbar,.navbarsm").css("background", "transparent");
+                            $(".navbar,.navbarsm").css("transition", ".5s");
+                                }
+                            });
+                        });
+                
+                
+                    </script>
     <script>
         new WOW().init();
     </script>
