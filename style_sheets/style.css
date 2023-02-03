@@ -1,0 +1,495 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Customized  Scroll  */
+
+/*
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--c2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--c2);
+}
+*/
+
+/* End of Customized  Scroll  */
+
+
+
+.nodrag{
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+}
+
+:root {
+    --c1: #ffffff;
+    /*     white       */
+    --c2: #000000;
+    /*     black       */
+    --c3: #1989fb;
+    /*                 */
+    --c4: #42d9de;
+    /*                 */
+    --c5: ;
+    /*                 */
+    --c6: ;
+    /*                 */
+    --c7: ;
+    /*                 */
+    --c8: ;
+    /*                 */
+    --c9: ;
+    /*                 */
+    --c10: ;
+}
+
+.c1 {
+    color: #ffffff;
+}
+
+.c2 {
+    color: #000000;
+}
+
+.c3 {
+    color: #1989fb;
+}
+
+.c4 {
+    color: #42d9de;
+}
+
+.c5 {
+    color: ;
+}
+
+.c6 {
+    color: ;
+}
+
+.c7 {
+    color: ;
+}
+
+.c8 {
+    color: ;
+}
+
+.c9 {
+    color: ;
+}
+
+.c10 {
+    color: ;
+}
+
+
+.bgc1 {
+    background-color: #ffffff;
+}
+
+.bgc2 {
+    background-color: #000000;
+}
+
+.bgc3 {
+    background-color: #1989fb;
+}
+
+.bgc4 {
+    background-color: #42d9de;
+}
+
+.bgc5 {
+    background-color: ;
+}
+
+.bgc6 {
+    background-color: ;
+}
+
+.bgc7 {
+    background-color: ;
+}
+
+.bgc8 {
+    background-color: ;
+}
+
+.bgc9 {
+    background-color: ;
+}
+
+.bgc10 {
+    background-color: ;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*Fonts for Css*/
+
+
+.fon1 {
+    font-family: 'Lexend', sans-serif;
+}
+
+.fon2 {}
+
+.fon3 {}
+
+/*End of fonts section   */
+
+
+/*  Media Queries     */
+
+
+
+
+@media only screen and (max-width: 575px) {}
+
+/*Mobile Devices*/
+@media only screen and (max-width: 480px) {
+    #sec1{
+    height: 160% !important;
+
+}
+}
+
+/*Sm Devices*/
+@media only screen and (max-width: 768px) {}
+
+/*medium devices*/
+@media only screen and (max-width: 1024px) {}
+
+/*Large devices*/
+@media only screen and (min-width: 1281px) {
+    .box{
+    height: 45vh !important;
+}
+    .box2{
+/*    height: 30vh !important;*/
+}
+
+.cpttxt{
+    top: 150px !important;
+}
+
+
+.cptform{
+    top:120px !important;
+}
+
+.cir1{
+    display: block !important;
+    position: absolute;
+    top: 90px;
+    left: 700px;
+    width: 15%;
+    z-index: 1;
+}
+
+.ffu{
+    position: relative;
+    top: 100px;
+}
+
+
+}
+
+
+/* End of Media Queries     */
+
+
+/*Nav bar start*/
+
+.navbar,
+.navbarsm {
+    background-color: var(--c2);
+    box-shadow: 0 2px 15px -5px rgba(255, 255, 255, 0.1);
+    z-index: 10;
+}
+
+
+
+
+.nav-link {
+    color: var(--c1) !important;
+}
+
+
+.nav-item a {
+    padding: 8px 8px 8px 64px;
+    font-size: 17px;
+    color: var(--c2);
+    display: block;
+    cursor: pointer !important;
+}
+
+.nav-item a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: var(--c2);
+    transition: 300ms;
+}
+
+.nav-item a:hover::after {
+    width: 65%;
+}
+
+
+
+.navbarsm {
+    position: fixed;
+    height: 6vh;
+    width: 100%;
+    background-color: var(--c2);
+    z-index: 15;
+    box-shadow: none;
+}
+
+#mainbox {
+    font-size: 1.8em;
+    transition: all .6s;
+    position: fixed;
+    right: 20px;
+    top: 1px;
+    color: var(--c1);
+    cursor: pointer !important;
+
+}
+
+.sidemenu {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: var(--c2);
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all .5s;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.sidemenu a {
+    padding: 8px 8px 8px 64px;
+    font-size: 20px;
+    color: var(--c1);
+    display: block;
+    cursor: pointer !important;
+}
+
+.sidemenu a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: var(--c4);
+    transition: 300ms;
+}
+
+.sidemenu a:hover::after {
+    width: 15%;
+}
+
+.sidemenu a:hover,
+#mainbox:hover {
+    color: var(--c1);
+    transition: .5s;
+}
+
+.sidemenu .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 80%;
+    font-size: 36px;
+    margin-left: 32px;
+    color: var(--c1);
+    cursor: pointer;
+    z-index: 10 !important;
+}
+
+                                    /*Nav bar end*/
+
+.upbtn {
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 10px;
+    color: var(--c1);
+    background-color: red;
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+    opacity: 0;
+}
+
+
+                                    /*  --------------------------- Codes Start's From Here ---------------------------------*/
+
+
+.cir1{
+    display: none;
+}
+
+
+#sec1{
+    width: 100%;
+    height: 100%;
+    background-image: url(pictures/bg1.svg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+/*    top: 70px;*/
+}
+
+
+#sec2{
+    width: 100%;
+    padding-bottom: 10%;
+    background-color: var(--c1);
+}
+
+
+
+.svg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.ctp{
+    font-size: 3.8em;
+    font-weight: bolder;
+    
+}
+
+.cpttxt{
+    position: relative;
+    top: 30px;
+}
+
+
+.cptform{
+    position: relative;
+    top:80px;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+    z-index: 3;
+    border-radius: 10px;
+}
+
+.cptpara{
+    font-size: 20px;
+}
+
+
+.head{
+    padding-top: 10%;
+    font-weight: bold;
+}
+
+#sec3{
+    width: 100%;
+    background-color: var(--c1);
+    padding-bottom: 5%;
+}
+
+.box{
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    transition: 300ms;
+    cursor: pointer ;
+}
+
+.box:hover{
+    scale: 1.01;
+    border-bottom: 8px solid var(--c3);
+    transition: 300ms;
+}
+
+
+
+
+#sec4{
+    width: 100%;
+    background-color: var(--c1);
+    padding-bottom: 5%;
+}
+
+
+.semicir{
+    position: absolute;
+    width: 5%;
+}
+
+.semicir2{
+    width: 5%;
+    position: absolute;
+    right: 0;
+}
+
+::placeholder{
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#p2sec1{
+    width: 100%;
+    height: 100%;
+    background-image: url(pictures/bg2.svg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+/*    top: 70px;*/
+}
+
+#p2sec3{
+    padding: 5%;
+    background-color: #1F2522;
+}
+
+.vmbut{
+    border: 1px solid var(--c1);
+    color: var(--c1);
+}
+
+.box2{
+    border-radius: 10px;
+}
