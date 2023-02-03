@@ -7,6 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/owl.carousel.min.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/owl.theme.default.min.css">
     <!--    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>-->
     <!--    <script src="scripts/pace.js"></script>-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -112,11 +114,14 @@
         
         <div class="container">
             <div class="row ">
-                <div class="col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/accenture.png" width="100%" class=""></div>
-                <div class="col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/aujas.png" width="100%" class=""></div>
-                <div class="col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/ey.png" width="100%" class=""></div>
-                <div class="col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/happiest-minds.png" width="100%" class=""></div>
-                <div class="col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/tcs.png" width="100%" class=""></div>
+                <div id="owl2" class="owl-carousel owl-theme">   
+                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="https://adiroha.co/assets/style_sheets/pictures/client-1.png" width="100%" ></div>
+                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="https://adiroha.co/assets/style_sheets/pictures/client-1.png" width="100%" ></div>
+                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="https://adiroha.co/assets/style_sheets/pictures/client-1.png" width="100%" ></div>
+                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="https://adiroha.co/assets/style_sheets/pictures/client-1.png" width="100%" ></div>
+                    <div class="col-sm-2 pt-5 mx-auto d-block "><img src="https://adiroha.co/assets/style_sheets/pictures/client-1.png" width="100%" ></div>
+                </div>
+
             </div>
         </div>
         
@@ -271,32 +276,33 @@
                 <i class="fa fa-caret-up" aria-hidden="true"></i>
             </div>
         <script>
-        $(document).ready(function() {
-            $('.upbtn').click(function() {
-                $('html,body').animate({
-                    scrollTop: $('#sec1').offset().top
-                }, 200);
-            });
-            
-             $(window).scroll(function() {
-                var upbtn = $(window).scrollTop();
-                if (upbtn > 0) {
-                    $(".upbtn").css("opacity", "1");
-                    $(".upbtn").css("transition", ".5s");
-                } else {
-                    $(".upbtn").css("opacity", "0");
-                    $(".upbtn").css("transition", ".5s");
+            $('#owl2').owlCarousel({
+                dots: false,
+                // rtl:true,
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                responsive: {
+                    0: {
+                        items: 1,
+                        loop: true
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5,
+
+                    }
                 }
             });
-            
-            
-            
-        });
 
     </script>
     <script>
         new WOW().init();
     </script>
-
+    <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
 </body></html>
