@@ -1074,6 +1074,43 @@ a{
 
 
 
+.form-control {
+	position: relative;
+	margin: 30px 0 20px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.n-input {
+	border: none;
+	display: block;
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+	height: 42px;
+	width: 100%;
+}
+
+.n-btn {
+	background-color: #1989fb;
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+	height: 54px;
+	padding: 12px 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.n-btn:hover {
+    scale: 1.1;
+    transition: 300ms;
+}
+
+.n-input:focus, .n-btn:focus {
+	outline: 0;
+}
+
 
 
 
