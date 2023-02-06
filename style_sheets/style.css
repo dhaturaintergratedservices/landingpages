@@ -492,6 +492,15 @@ a{
     border-radius: 10px;
 }
 
+.p3cptform{
+    position: relative;
+    top:180px;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+
+
 .cptpara{
     font-size: 20px;
 }
@@ -580,13 +589,33 @@ a{
         height: 100% !important;
     }
 
+    #p3sec1 {
+        height: 100% !important;
+    }
+
     .p1cptform{
         top: 160px;
+    }
+
+    .pwd {
+        margin-top: 180px;
     }
 
     .cptform{
         top: 100px;
     }
+  }
+
+
+  @media(max-width: 786px){
+    #p3sec2 {
+        margin-top: 40%;
+    }
+
+    .p3cptform{
+        top: 140px;
+    }
+
   }
 
 #p2sec3{
@@ -692,8 +721,8 @@ a{
 
 
 #p3sec1{
-     width: 100%;
-    height: 60%;
+    width: 100%;
+    height: 100% auto;
     background-image: url(pictures/bg3.svg);
     background-position: center center;
     background-size: cover;
@@ -702,7 +731,7 @@ a{
 
 .pwd{
     position: relative;
-    top: 200px;
+    top: 80px;
     font-weight: bolder;
 }
 
