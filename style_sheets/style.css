@@ -742,13 +742,11 @@ a{
 
 
 #p3sec3{
-    background-color: var(--c9);
+    background-color: #020202;
 }
 
 .wdbox{
     border-radius: 20px;
-    box-shadow:inset -17px -17px 45px #161a18,
-    inset 17px 17px 45px #28302c;
     cursor: pointer;
     color: var(--c1);
     transition: 300ms;
