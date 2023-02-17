@@ -1,0 +1,647 @@
+<!--
+
+<?//php
+//if (isset( $_POST[ "submit" ])){
+//$to = "leads@adiroha.com";
+//$subject = "Security Training";
+//$message = "
+//<html>
+//<head>
+//<title>Plans</title>
+//</head>
+//<body>
+//<p>User Info</p>
+//<table>
+//
+//<th>Name</th>
+//<td>".$_POST["name"]."</td>
+//</tr>
+//
+//<tr>
+//<th>Message</th>
+//<td>".$_POST["email"]."</td>
+//</tr>
+//<tr>
+//
+//<th>Phone Number</th>
+//<td>".$_POST["phone"]."</td>
+//</tr>
+//<tr>
+//<th>Current Occupation</th>
+//<td>".$_POST["co"]."</td>
+//</tr>
+//<tr>
+//<th>Experience</th>
+//<td>".$_POST["exp"]."</td>
+//</tr>
+//<th>Message</th>
+//<td>".$_POST["message"]."</td>
+//</tr>
+//
+//
+//
+//</table>
+//</body> 
+//</html>
+//";
+//$headers = "MIME-Version: 1.0" . "\r\n";
+//$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+//
+//// $headers .= "From: info.pioneeronline@gmail.com" . "\r\4n";
+//
+//$headers .= "From: leads@adiroha.com" . "\r\4n";
+//
+//if(mail($to,$subject,$message,$headers)){
+//    echo "<script> alert('Submited Successfully')</script>";
+//}else{
+//     echo "<script> alert('failed')</script>";
+//}
+//}
+
+//?>
+-->
+
+
+<html lang="en">
+<head>
+    <title>Adiroha</title>
+    
+<!--    <frameset rows="100%,0" border="0">-->
+
+<!--<frame src="corporate_training.php" frameborder="0">-->
+
+<!--<frame frameborder="0">-->
+
+<!--</frameset>-->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>-->
+    <!--    <script src="scripts/pace.js"></script>-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style_sheets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="style_sheets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="style_sheets/style.css">
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-sm fixed-top p-4 d-none d-xl-block">
+        <div class="container-fluid">
+            <a class="navbar-brand" href=""><img src="style_sheets/pictures/logo.png" class="logo" width="40%"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navsec" id="mynavbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item d-flex navmargin">
+                        <a class="nav-link" href="">Home</a>
+<!--                        <div class="mt-2 c1">|</div>-->
+                    </li>
+                    <li class="nav-item d-flex navmargin">
+                        <a class="nav-link" href="profile">Profile</a>
+<!--                        <div class="mt-2 c1">|</div>-->
+                    </li>
+
+                    <li class="nav-item droper navmargin">
+                        <span class="dropdown">
+
+                            <button class="c1 dropbtn "><a class="nav-link" href="" class="">Services <span class="dropdown-toggle c1"></span></a></button>
+                            <div class="dropdown-content">
+                                <a href="services/application_security">application security</a>
+                                <a href="services/network_penetration_testing">network penetration testing</a>
+                                <a href="services/cloud_penetration_testing">cloud penetration testing</a>
+                                <a href="services/iot_security_testing">iot security testing</a>
+                                <a href="services/secure_code_review">secure code review</a>
+                                <a href="services/server_hardening">server hardening</a>
+                                <a href="services/compilance">compliance</a>
+                                <a href="services/risk">risk advisory</a>
+                                <a href="services/iam">identity and access control</a>
+
+                            </div>
+                        </span>
+                    </li>
+                    <li class="nav-item d-flex  navmargin">
+                        <a class="nav-link" href="training">Training</a>
+<!--                        <div class="mt-2 c1">|</div>-->
+                    </li>
+                    <li class="nav-item d-flex navmargin">
+                        <a class="nav-link" href="careers">Careers</a>
+<!--                        <div class="mt-2 c1">|</div>-->
+                    </li>
+                    <li class="nav-item d-flex navmargin">
+                        <a class="nav-link" href="blog">Blog</a>
+<!--                        <div class="mt-2 c1">|</div>-->
+                    </li>
+
+
+                    <li class="nav-item d-flex navmargin">
+                        <a class="nav-link" href="contact">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-ite mx-5">
+                        <a href="book-demo.html" type="button" class="nav-link bad" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Book a demo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbarsm d-xl-none">
+        <div id="mainbox" onclick="openFunction()">&#9776;</div>
+        <div id="menu" class="sidemenu">
+            <a href="" id="link1" class="fon1">Home</a>
+            <a href="profile" id="link" class="fon1">Profile</a>
+
+
+
+            <span class="dropdown">
+
+                <button class="c1 dropbtn "><a class="" class="">Services <span class="dropdown-toggle c1"></span></a></button>
+                <div class="dropdown-contentsm ">
+                    <a href="services/application_security">application security</a>
+                    <hr>
+                    <a href="services/network_penetration_testing">network penetration testing</a>
+                    <hr>
+                    <a href="services/cloud_penetration_testing">cloud penetration testing</a>
+                    <hr>
+                    <a href="services/iot_security_testing">iot security testing</a>
+                    <hr>
+                    <a href="services/secure_code_review">secure code review</a>
+                    <hr>
+                    <a href="services/server_hardening">server hardening</a>
+                    <a href="services/compilance">compliance</a>
+                    <hr>
+                    <a href="services/risk">risk advisory</a>
+                    <hr>
+                    <a href="services/iam">identity and access control</a>
+
+                </div>
+            </span>
+
+
+
+            <a href="training" id="link" class="fon1">Traininings</a>
+            <a href="careers" id="link" class="fon1">Careers</a>
+            <a href="blog" id="link" class="fon1">Blog</a>
+            <a href="contact" id="link" class="fon1">Contact Us</a>
+
+            <div class="col-sm-10 mx-auto pt-5 m-5 navlogo">
+                <img src="style_sheets/pictures/logo.png" width="100%" class="">
+            </div>
+            <div class="closebtn" onclick="closeFunction()">&times;</div>
+        </div>
+    </nav>
+
+             <!-- --------------------------- Codes Start's From Here ----------------------------------->
+
+
+    <section id="p2sec1">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 pt-5 cpttxt">
+                    <div class="h1 c1 ctp col-sm-10 mx-3 fon1"><span class="c5">Corporate </span>Training Programs </div>
+                    <div class="c1 pt-3 cptpara col-sm-10 mx-3 fon1">Empower your company with the latest cybersecurity skills and knowledge. Our custom tailored corporate training program is designed to meet the specific needs of your organization. Whether it's enhancing the security of your IT infrastructure, or preparing your employees for cyber threats, our training provides hands-on, practical experience to help you and your team succeed in today's rapidly changing technology landscape.</div>
+
+                </div>
+                <div class="col-lg-5 mx-1 ">
+                         <!-- <img src="style_sheets/pictures/cir.png" class="cir1"> -->
+                    <div class="cptform card bgc1 p-4 mt-1"> 
+                        <div class="h3 fon1"><b>Let's Talk</b></div>
+                    <form method="post" action="security_training.php" class="pt-2">
+                          <input type="text" name="name" class="form-control p-1 mt-2" placeholder="Name" >
+                        <input type="text" name="email" class="form-control p-1 mt-3 mt-2" placeholder="Email" >
+                        <input type="text" name="phone" class="form-control p-1 mt-3 mt-2" placeholder="Phone" >
+                        <input type="text" name="co" class="form-control p-1 mt-3 mt-2" placeholder="Current Occupation" >
+                        <input type="text" name="exp" class="form-control p-1 mt-3 mt-2" placeholder="Experience" >
+
+                        <div class="pt-3"><b>Anything else to add?</b></div>
+                        <textarea name="message" class="col-sm-12 form-control"  rows="2"></textarea>
+                        <input type="submit" name="submit" value="Submit" class="btn btn-primary mt-3 btn-block col-sm-12">
+                        
+                    </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>   
+
+<section id="sec2" >
+        
+        <div class="container pt-5">
+            <div class="h2 text-center head fon1 "><span class="c3">Students</span> Successfully Hired By </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme" id="owl1">
+
+                    <div class="item col-sm-2 pt-5 mx-auto d-block ">
+                        <img src="style_sheets/pictures/capgemini.png" width="100%">
+                    </div>
+
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/secureye.png" width="100%"></div>
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/pwc.png" width="100%"></div>
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/aujas.png" width="100%"></div>
+
+
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/ey.png" width="100%"></div>
+
+                    
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/accenture.png" width="100%"></div>
+
+                    
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/tcs.png" width="100%"></div>
+
+                    
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/happiest-minds.png" width="100%"></div>
+
+                    
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/sacumen.png" width="100%"></div>
+
+                    
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/paramount_software.png" width="100%"></div>
+
+                    
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/genisys.png" width="100%"></div>
+
+                    
+                    <div class="item col-sm-2 pt-5 mx-auto d-block "><img src="style_sheets/pictures/infosys.png" width="100%"></div>
+
+                  
+
+
+                </div>
+
+            </div>
+        </div>
+        
+    </section>     
+
+<section id="p2sec3">
+    <div class="container-fluid">
+        <div class="row fon1">
+            <div class="col-sm-4 ffu">
+                <div class="h1 c1">Features For You </div>
+                <div class="c1 col-sm-8">We are here to provide you top features of the corporate.</div>
+                <div class="vmbut text-center col-sm-4 p-2 mt-4">View More</div>
+            </div>
+          
+            <div class="col-sm-8">
+                <div class="owl-carousel owl-theme" id="owl2">
+
+                    <div class="item col-sm-6 mx-auto pt-5">
+                        <div class="box2 bgc1 p-3">
+                            <img src="style_sheets/pictures/curriculum.png" width="" class="mx-auto d-block col-sm-4">
+                            <div class="text-center p-3"><b>Corporate-focused curriculum</b></div>
+                            <div class="pb-2 text-center">Our curriculum is specifically designed for corporate training, addressing the unique needs and challenges of businesses in the field of cyber security.</div>
+                        </div>
+                    </div>          
+            
+                    <div class="item col-sm-6 mx-auto pt-5">
+                        <div class="box2 bgc1 p-3">
+                            <img src="style_sheets/pictures/trainings.png" width="" class="mx-auto d-block col-sm-6 p-4">
+                            <div class="text-center p-3"><b>Tailored training plan</b></div>
+                            <div class="pb-2 text-center">Our team will work with your company to create a customized training plan that fits your specific requirements and goals.</div>
+                        </div>
+                    </div>   
+                    <div class="item col-sm-6 mx-auto pt-5">
+                        <div class="box2 bgc1 p-3">
+                            <img src="style_sheets/pictures/onsite_trainings.png" width="" class="mx-auto d-block col-sm-4">
+                            <div class="text-center p-3"><b>On-site training</b></div>
+                            <div class="pb-2 text-center">Our group training sessions are an excellent opportunity for employees to work together, learn from each other, and build a stronger, more secure team.</div>
+                        </div>
+                    </div>    
+    
+                    <div class="item col-sm-6 mx-auto pt-5">
+                        <div class="box2 bgc1 p-3">
+                            <img src="style_sheets/pictures/post_support.png" width="" class="mx-auto d-block col-sm-4">
+                            <div class="text-center p-3"><b>Post-training support</b></div>
+                            <div class="pb-2 text-center">Our team is always available to answer questions and provide support even after the training program is complete, ensuring your employees have the resources they need to continue learning and growing.</div>
+                        </div>
+                    </div>    
+    
+                    <div class="item col-sm-6 mx-auto pt-5">
+                        <div class="box2 bgc1 p-3">
+                            <img src="style_sheets/pictures/team.png" width="" class="mx-auto d-block col-sm-4 p-4">
+                            <div class="text-center p-3"><b>Team Communication Training</b></div>
+                            <div class="pb-2 text-center">Our team will work with your company to help employees develop a complete spectrum of strengths to make them better collaborators and teammates.</div>
+                        </div>
+                    </div>    
+    
+                    <div class="item col-sm-6 mx-auto pt-5">f
+                        <div class="box2 bgc1 p-3">
+                            <img src="style_sheets/pictures/review.png" width="" class="mx-auto d-block col-sm-4">
+                            <div class="text-center p-3"><b>Productive Feedback & Performance Reviews</b></div>
+                            <div class="pb-2 text-center"> we help you demystify the process of giving and receiving performance reviews and feedback. </div>
+                        </div>
+                    </div>   
+                    
+                    <div class="item col-sm-6 mx-auto pt-5">
+                        <div class="box2 bgc1 p-3">
+                            <img src="style_sheets/pictures/scalable.png" width="" class="mx-auto d-block col-sm-4">
+                            <div class="text-center p-3"><b>Scalable to fit your needs</b></div>
+                            <div class="pb-2 text-center">Our training program is scalable to meet the needs of companies of all sizes, from small businesses to large corporations.</div>
+                        </div>
+                    </div>   
+            </div>
+            
+                    
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<img src="style_sheets/pictures/semicir.png" class="semicir">
+    
+        <section id="sec4" class="fon1">
+        <div class="h2  text-center pt-5">Features for you</div>
+        <div class="p-3 text-center">Our support team ready to help you, please contact with them</div>
+        <div class="container pt-5">
+            <div class="col-sm-8 mx-auto border p-5">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                    
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <b>What is included in your corporate training program?</b>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Our corporate training program includes a customized curriculum, tailored to meet the unique needs of your company. We offer group training sessions, on-site training options, and post-training support to ensure your employees have the resources they need to succeed.</div>
+                        </div>
+                      </div>
+                    
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <b>Can you customize the training program to fit our specific needs?</b>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Absolutely! Our team will work with you to create a customized training plan that fits your specific requirements and goals.</div>
+                        </div>
+                      </div>
+                    
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingfour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <b>Do you offer on-site training options?</b>
+                          </button>
+                        </h2>
+                        <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Yes, we offer on-site training options to make it easy for your employees to attend without the added stress of travel and time away from the office.</div>
+                        </div>
+                      </div>
+                    
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <b>What is the cost of your corporate training program?</b>
+                          </button>
+                        </h2>
+                        <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">The cost of our corporate training program is determined based on the size of your company and the specific needs and goals of your training program. Our team will work with you to provide a quote that fits your budget.</div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <b>What kind of post-training support is available?</b>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Our team is always available to answer questions and provide support even after the training program is complete. This includes ongoing training resources, personalized support, and access to our team of experts</div>
+                        </div>
+                      </div>
+
+
+</div>
+</div>
+<img src="style_sheets/pictures/semicir2.png" class="semicir2">
+
+
+</section>
+    
+
+<footer class="footer pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">privacy policy</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="">application security</a></li>
+                        <li><a href="">network penetration testing</a></li>
+                        <li><a href="">cloud penetration testing</a></li>
+                        <li><a href="">iot security testing</a></li>
+
+
+
+
+                        <li>
+                            <a data-bs-toggle="collapse" data-target="#showservice" href="#showservice" role="button" aria-expanded="false" aria-controls="showservice">
+                                <span class="c5">Show More </span>
+                            </a>
+                        </li>
+
+
+                        <div class="collapse" id="showservice">
+
+
+                            <li><a href="">secure code review</a></li>
+                            <li><a href="">server hardening</a></li>
+                            <li><a href="">compliance</a></li>
+                            <li><a href="">risk advisory</a></li>
+                            <li><a href="">identity and access control</a></li>
+
+                        </div>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center cpy mt-4 pb-2">Copyright © 2022 by Adiroha Solutions. All Rights Reserved.</div>
+    </footer>
+
+
+
+
+
+
+
+    
+                                <!----------------------------- Codes End's Here ----------------------------------->
+    
+    
+    
+      <div class="btn p-3 upbtn">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+            </div>
+
+    <script>
+// var currentUrl = window.location.href;
+// var newUrl = currentUrl.replace(/\.[^/.]+$/, "");
+// history.pushState({}, "", newUrl);
+    </script>
+<script type="text/javascript">
+
+
+
+    $('.upbtn').click(function() {
+        $('html,body').animate({
+            scrollTop: $('#p2sec1').offset().top
+        }, 200);
+    });
+
+        $(document).ready(function() {
+                    $(window).scroll(function() {
+                        var upbtn = $(window).scrollTop()
+                        var nav = $(window).scrollTop()
+                        if (upbtn > 80) {
+                            $(".upbtn").css("opacity", "1");
+                            $(".upbtn").css("transition", ".5s");
+                            $(".upbtn").css("cursor", "pointer");
+                            $(".logo").css("width", "25%");
+                            $(".logo,.nav-link").css("transition", ".5s");
+                            $(".nav-link").css("font-size", "16px");
+        
+                        } else {
+                            $(".upbtn").css("opacity", "0");
+                            $(".upbtn").css("transition", ".5s");
+                            $(".upbtn").css("cursor", "context-menu");
+                            $(".logo").css("width", "40%");
+                            $(".logo,.nav-link").css("transition", ".5s");
+                            $(".nav-link").css("font-size", "18px");
+                        }
+                    });
+                });
+                $(document).ready(function() {
+                    $(window).scroll(function() {
+                        var upbtn = $(window).scrollTop();
+                        if (upbtn > 0) {
+                $(".navbar,.navbarsm").css("background", "#020202");
+                    $(".navbar,.navbarsm").css("transition", ".5s");
+                } else {
+                    $(".navbar,.navbarsm").css("background", "rgba(0, 0, 0, 0.6)");
+                    $(".navbar,.navbarsm").css("transition", ".5s");
+                        }
+                    });
+
+
+$('#owl1').owlCarousel({
+                dots: false,
+                // rtl:true,
+                loop: true,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 1500,
+                responsive: {
+                    0: {
+                        items: 1,
+                        loop: true
+                    },
+                    600: {
+                        items: 3,
+                        loop: true
+                    },
+                    1000: {
+                        items: 5,
+                        loop: true
+
+                    }
+                }
+            });
+
+
+
+            $('#owl2').owlCarousel({
+                dots: false,
+                // rtl:true,
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: {
+                        items: 1,
+                        loop: true
+                    },
+                    600: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 2,
+
+                    }
+                }
+            });
+                    
+                });
+        
+                
+        
+            </script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body></html>
